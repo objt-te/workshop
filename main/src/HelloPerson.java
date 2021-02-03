@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /******************************************************************************
  * Copyright (c) 2020 Objective
  * All rights reserved
@@ -17,6 +19,8 @@ public class HelloPerson
 
   private static String getName()
   {
-    return "demo name";
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Name: ");
+    return scanner.nextLine();
   }
 }
